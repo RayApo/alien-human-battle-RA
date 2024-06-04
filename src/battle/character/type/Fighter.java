@@ -35,7 +35,8 @@ public abstract class Fighter implements Combatant, Damageable {
 	 */
 	public int attack(Damageable opponent) {
 		//TODO: PART 1
-		return -1;
+		int randomDamage = RandomUtil.randomInclusive(.5 * attackPower, attackPower);
+		return randomDamage;
 	}
 	
 	/**
@@ -94,7 +95,11 @@ public abstract class Fighter implements Combatant, Damageable {
 	@Override
 	public boolean isAlive() {
 		//TODO: PART 1
+		if (health > 0) {
+		  return true
+			  } else {
 		return false;
+		}
 	}
 	
 	
@@ -116,6 +121,11 @@ public abstract class Fighter implements Combatant, Damageable {
 	@Override
 	public boolean canTakeTurn() {
 		//TODO: PART 1
-		return false;
+		if (isAlive = true) {
+			return true
+				} else {
+			return false;
+		}
+		
 	}
 }
