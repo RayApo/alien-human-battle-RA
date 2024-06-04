@@ -21,9 +21,9 @@ public abstract class Fighter implements Combatant, Damageable {
 	 */
 	public Fighter(int maxHealth, int attackPower) {
 		//TODO: PART 1
-		this.maxHealth = -1;
-		this.health = -1;
-		this.attackPower = -1;
+		this.maxHealth = maxHealth;
+		this.health = health;
+		this.attackPower = attackPower;
 	}
 	
 	/**
