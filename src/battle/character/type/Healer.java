@@ -32,7 +32,7 @@ public abstract class Healer implements Disableable, Combatant {
 	public int heal(Damageable teammate) {
 		//TODO: PART 2
 		if (teammate < maxHealthPoints) {
-                   int randomHeal = 
+                   int randomHeal = RandomUtil.randomInclusive(.5 * healthPoints, healthPoints);
 		}
 		
 		return randomHeal;
