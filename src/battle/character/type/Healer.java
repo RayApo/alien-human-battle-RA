@@ -46,7 +46,12 @@ public abstract class Healer implements Disableable, Combatant {
 	 */
 	public int sacrifice(Damageable teammate) {
 		//TODO: PART 2
-		return -1;
+		if (teammate < (maxHealthPoints * .20)) {
+                   return healingPower;
+		}
+
+		// int newHealth = teammate.getMaxHealth() - teammate.getHealth();
+		// teammate.incrematentHealth(newHealth);
 	}
 	
 	/**
