@@ -121,10 +121,7 @@ public abstract class Fighter implements Combatant, Damageable {
 	@Override
 	public boolean canTakeTurn() {
 		//TODO: PART 1
-		if (isAlive = true) {
-			return true
-				} else {
-			return false;
+		return health > 0;
 		}
 		
 	}
